@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import PhotoComments from "./PhotoComments";
 
 const PhotoContent = ({ data }) => {
-  console.log(data);
   const { photo, comments } = data;
   return (
     <div className={styles.photo}>
