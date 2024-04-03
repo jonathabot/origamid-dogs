@@ -12,7 +12,7 @@ const FeedPhotos = ({ setModalPhoto }) => {
   useEffect(() => {
     async function fetchPhotos() {
       const { url, options } = PHOTOS_GET({ page: 1, total: 6, user: 0 });
-      const { reponse, json } = await request(url, options);
+      const { json } = await request(url, options);
       console.log(json);
     }
     fetchPhotos();
